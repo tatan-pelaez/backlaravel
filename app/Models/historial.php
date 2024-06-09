@@ -29,7 +29,7 @@ class historial extends Model
         'PRESUPUESTO',
         'TEMPERATURA',
         'TEMPERATURAMAXIMA',
-        'TEMPERATURAMINIMA'
+        'TEMPERATURAMINIMA',
         'FK_CIUDAD'
     ];
     protected $dates = ['deleted_at'];

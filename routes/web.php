@@ -27,3 +27,4 @@ Route::post('/Insert', [PaisesController::class, 'create']);
 Route::post('/InsertCity', [CiudadesController::class, 'create']);
 Route::get('/info', [infopc::class, 'getInfo']);
 Route::get('/ShowHistory/{ip}/{nombrepc}', [infopc::class, 'show']);
+Route::post('/InsertHIstory', [infopc::class, 'create']);

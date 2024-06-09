@@ -33,6 +33,7 @@ class CreateHistorialTable extends Migration
             $table->decimal('TEMPERATURA', 10, 7);
             $table->decimal('TEMPERATURAMAXIMA', 10, 7);
             $table->decimal('TEMPERATURAMINIMA', 10, 7);
+            $table->unsignedBigInteger('FK_CIUDAD');
             $table->foreign('FK_CIUDAD')->references('PK_CIUDAD')->on('ciudades');
         });
     }
